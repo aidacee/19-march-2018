@@ -4,9 +4,75 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
+   <title>Tables Example</title>
+   <style>
+
+td:first-of-type  {
+   width: 70px;
+}
+
+table, td, th {
+   border: 1px solid black;
+}
+
+table {
+   border-collapse: collapse;
+}
+
+td, th {
+   padding: 12px;
+}
+
+tr:nth-child(even) {
+   background-color: rgb(220, 220, 220);
+}
+
+td:nth-child(3) {
+   text-align: right;
+}
+
+th[colspan="2"] {
+   text-align: right;
+}
+   </style>
 </head>
 <body>
-
+   <table>
+      <thead>
+         <tr>
+            <th>Quantity</th>
+            <th>Description</th>
+            <th>Price</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>1</td>
+            <td>Apple</td>
+            <td>$1.00</td>
+         </tr>
+         <tr>
+            <td>10</td>
+            <td>Pear</td>
+            <td>$20.00</td>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>Soy milk</td>
+            <td>$200.00</td>
+         </tr>
+         <tr>
+            <td>45</td>
+            <td>Kiwi</td>
+            <td>$2000.00</td>
+         </tr>
+      </tbody>
+      <tfoot>
+         <tr>
+            <th colspan="2">Total</th>
+            <th>$2,221.00</th>
+         </tr>
+      </tfoot>
+   </table>
 </body>
 </html>
